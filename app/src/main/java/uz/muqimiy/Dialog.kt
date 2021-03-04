@@ -9,6 +9,7 @@ class Dialog(context: Context) : AlertDialog(context) {
 
 
     init {
+
         setTitle("Tanlang")
         val view = LayoutInflater.from(context).inflate(R.layout.dialog, null, false)
         setView(view)
