@@ -1,10 +1,12 @@
 package uz.muqimiy
 
+import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.content.Context
 import android.view.LayoutInflater
 import android.widget.TextView
 
+@SuppressLint("InflateParams")
 class Dialog(context: Context) : AlertDialog(context) {
 
 
