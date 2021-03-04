@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/contact"
+        android:title="@string/aloqa_uchun" />
+    <item
+        android:id="@+id/baho"
+        android:title="@string/baholash"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/about_us"
+        android:title="@string/biz_haqimizda" />
+
+</menu>

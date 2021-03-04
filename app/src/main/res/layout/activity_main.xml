@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="24sp"
+        android:orientation="horizontal"
+        android:weightSum="13"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="6"
+            app:cardBackgroundColor="#f77a00"
+            app:cardCornerRadius="8dp">
+
+            <TextView
+                android:id="@+id/m_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:text="Media"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                app:drawableStartCompat="@drawable/ic_image_gallery" />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="6"
+            app:cardBackgroundColor="#f77a00"
+            app:cardCornerRadius="8dp">
+
+            <TextView
+                android:id="@+id/m_more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:text="@string/muqumiy_izidan"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                app:drawableStartCompat="@drawable/ic_multiple_users_silhouette" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:weightSum="13"
+        app:layout_constraintBottom_toTopOf="@id/ll_bottom">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="6"
+            app:cardBackgroundColor="#f77a00"
+            app:cardCornerRadius="8dp">
+
+            <TextView
+                android:id="@+id/m_about"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:text="@string/hayoti_va_ijodi"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                app:drawableStartCompat="@drawable/ic_user" />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="6"
+            app:cardBackgroundColor="#f77a00"
+            app:cardCornerRadius="8dp">
+
+            <TextView
+                android:id="@+id/m_lyrics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:text="@string/asarlari"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                app:drawableStartCompat="@drawable/ic_baseline_menu_book_24" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <com.comix.rounded.RoundedCornerImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_image"
+        app:cornerRadius="64dp"
+        app:cornerRightDisable="true"
+        app:cornerTopDisable="true"
+        app:layout_constraintBottom_toTopOf="@id/ll_top"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="@string/muqimiy"
+            android:textColor="@android:color/black"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="O'zbek shoiri va mutafakkiri"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
